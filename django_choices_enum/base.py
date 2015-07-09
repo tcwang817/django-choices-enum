@@ -32,3 +32,7 @@ class ChoicesEnumMeta(type(enum.Enum)):
 
 class ChoicesEnum(enum.Enum):
     __metaclass__ = ChoicesEnumMeta
+
+    @classmethod
+    def choices(cls):
+        return [(v.value, v.display) for _, v in cls._member_map_.items()]
