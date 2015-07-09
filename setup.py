@@ -9,7 +9,7 @@ setup(
     version=version,
 
     description='make enum34 package play well with django choices',
-    long_description=io.open('README.rst', encoding='utf-8').read(),
+    long_description=io.open('README.md', encoding='utf-8').read(),
     author='Tommy Wang',
     author_email='twang@joinem.com',
     url='http://github.com/tcwang817/django-choices-enum',
