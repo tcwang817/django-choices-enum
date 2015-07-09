@@ -1,3 +1,2 @@
 from base import ChoicesEnum
-
-__version__ = '0.1'
+from _version import __version__

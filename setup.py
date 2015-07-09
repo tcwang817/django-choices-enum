@@ -2,7 +2,7 @@ import io
 import os
 from setuptools import setup, find_packages
 
-version = __import__('django_choices_enum').__version__
+version = io.open('django_choices_enum/_version.py').readlines()[-1].split()[-1].strip('"\'')
 
 setup(
     name='django-choices-enum',
